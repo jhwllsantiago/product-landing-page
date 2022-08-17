@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 2vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(204, 204, 204);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+header {
+  background-color: black;
+}
+header img {
+  margin-left: 1rem;
+  width: 10rem;
+  height: 5rem;
+}
+
+.container {
+  align-self: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#amd-earth {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url("/product-landing-page/assets/images/star-background-1920x600.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+  box-shadow: 0 0 1rem 1rem black inset;
+}
+#amd-earth .img-container img {
+  height: 20rem;
+}
+#amd-earth p {
+  font-size: 2rem;
+  color: white;
+}
+#amd-earth p .blinking {
+  -webkit-animation: blinking 400ms linear 10ms infinite alternate forwards;
+          animation: blinking 400ms linear 10ms infinite alternate forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transition: 1000ms all ease;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-left {
+  -webkit-animation: fade-left 1000ms ease-in;
+          animation: fade-left 1000ms ease-in;
+}
+
+.active.fade-right {
+  -webkit-animation: fade-right 1000ms ease-in;
+          animation: fade-right 1000ms ease-in;
+}
+
+.active.fade-bottom {
+  -webkit-animation: fade-bottom 1000s ease-in;
+          animation: fade-bottom 1000s ease-in;
+}
+
+@-webkit-keyframes shake {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+@-webkit-keyframes blinking {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@keyframes blinking {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media all and (orientation: portrait) {
+  header img {
+    width: 5rem;
+    height: 2.5rem;
+  }
+  p {
+    padding-left: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  #amd-earth {
+    height: 5rem;
+  }
+  #amd-earth .img-container img {
+    height: 4.5rem;
+  }
+  #amd-earth p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=response.css.map */

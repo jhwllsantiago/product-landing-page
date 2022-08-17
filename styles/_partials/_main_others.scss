@@ -1,0 +1,58 @@
+#powered-by {
+  position: relative;
+  margin-top: 5rem;
+
+  video {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 28.125rem;
+  }
+
+  .overlay-box {
+    position: absolute;
+    top: 5em;
+    left: 25em;
+    padding: 3rem;
+    background: rgb(0, 0, 0, 0.4);
+
+    .overlay {
+      color: white;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#game-wall {
+  width: 100%;
+  height: 20rem;
+  background-image: url("/product-landing-page/assets/images/game-wall-dk-1920x1080.webp");
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+  box-shadow: 0 0 1rem 1rem black inset;
+}
+
+#amd-earth {
+  margin: 5rem 0 5rem 0;
+  width: 100%;
+  height: 20rem;
+  justify-content: left;
+  background-image: url("/product-landing-page/assets/images/star-background-1920x600.webp");
+  box-shadow: 0 0 1rem 1rem black inset;
+  background-blend-mode: color;
+
+  .img-container {
+    img {
+      height: 20rem;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+
+    .blinking {
+      animation: blinking 400ms linear 10ms infinite alternate forwards;
+    }
+  }
+}

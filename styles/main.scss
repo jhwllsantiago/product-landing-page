@@ -1,0 +1,14 @@
+@use "./_partials/variables";
+@use "./_partials/reset";
+@use "./_partials/body";
+@use "./_partials/header";
+@use "./_partials/header_mobile";
+@use "./_partials/main_overview";
+@use "./_partials/main_technologies";
+@use "./_partials/main_system";
+@use "./_partials/main_others";
+@use "./_partials/footer";
+@use "./_partials/animations";
+@use "./_partials/media_query";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");

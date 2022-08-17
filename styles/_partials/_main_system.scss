@@ -1,0 +1,39 @@
+#system-specs {
+  padding: 4rem 0 2rem 0;
+  background-image: url("/product-landing-page/assets/images/grid-bg-16-9.png");
+  box-shadow: 0 0 1rem 1rem black inset;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .table-container {
+    width: 70rem;
+    margin: 2.5rem auto 0 auto;
+    padding-bottom: 2rem;
+
+    table {
+      table-layout: fixed;
+
+      tr:nth-child(odd) {
+        background-color: rgb(191, 191, 191, 0.4);
+      }
+
+      tr:nth-child(even) {
+        background-color: rgb(38, 38, 38, 0.4);
+      }
+
+      td {
+        width: 14rem;
+        padding: 1rem;
+
+        p {
+          padding: 0.25rem;
+        }
+      }
+      td + td {
+        width: auto;
+      }
+    }
+  }
+}

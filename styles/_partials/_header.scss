@@ -1,0 +1,38 @@
+#header {
+  & {
+    padding: 0.625rem;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  .flex-container {
+    .img-container {
+      width: 7rem;
+    }
+    p {
+      padding-left: 2rem;
+      font-size: 1.5rem;
+      opacity: 0;
+    }
+  }
+
+  nav {
+    grid-template-rows: 2rem;
+    grid-template-columns: auto auto auto auto;
+
+    .nav-link {
+      margin-left: 0.625rem;
+      cursor: pointer;
+
+      a {
+        padding: 0.625rem;
+      }
+    }
+  }
+}

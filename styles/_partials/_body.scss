@@ -1,0 +1,44 @@
+html {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("/product-landing-page/assets/images/1432865-black-screen-bg-1920x800.webp");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  place-content: center center;
+  place-items: center center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.active {
+  background-color: white;
+  color: black;
+}
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 3rem 3rem black inset;
+}
