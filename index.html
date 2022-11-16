@@ -31,9 +31,7 @@
         <div class="nav-link"><a href="#overview">OVERVIEW</a></div>
         <div class="nav-link"><a href="#technologies">TECHNOLOGIES</a></div>
         <div class="nav-link"><a href="#system-specs">SYSTEM SPECS</a></div>
-        <div class="nav-link">
-          <a href="#contact-us" onclick="expandContactUs()">CONTACT US</a>
-        </div>
+        <div class="nav-link"><a href="#contact-us">CONTACT US</a></div>
       </nav>
     </header>
 
@@ -45,22 +43,22 @@
           /></a>
         </div>
         <div class="nav-expander">
-          <i class="fa-solid fa-bars" onclick="checkIfOpen()" id="nav-menu"></i>
+          <i class="fa-solid fa-bars" id="nav-menu"></i>
         </div>
       </div>
 
       <nav id="nav-bar-mobile">
-        <div class="nav-link" onclick="closeNav()">
+        <div class="nav-link">
           <a href="#overview">OVERVIEW</a>
         </div>
-        <div class="nav-link" onclick="closeNav()">
+        <div class="nav-link">
           <a href="#technologies">TECHNOLOGIES</a>
         </div>
-        <div class="nav-link" onclick="closeNav()">
+        <div class="nav-link">
           <a href="#system-specs">SYSTEM SPECS</a>
         </div>
-        <div class="nav-link" onclick="closeNav()">
-          <a href="#contact-us" onclick="expandContactUs()">CONTACT US</a>
+        <div class="nav-link">
+          <a href="#contact-us">CONTACT US</a>
         </div>
       </nav>
     </header>
@@ -105,7 +103,7 @@
         </div>
 
         <div class="overview-item">
-          <button onclick="setupVideo()">PRODUCT VIDEO</button>
+          <button id="video-button">PRODUCT VIDEO</button>
         </div>
       </section>
 
@@ -296,7 +294,7 @@
     <footer>
       <section id="contact-us">
         <div>
-          <h3 onclick="displayContactUs()">
+          <h3>
             Connect with Us
             <i class="fa-solid fa-angles-right" id="form-arrow"></i>
           </h3>

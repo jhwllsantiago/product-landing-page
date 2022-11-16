@@ -119,4 +119,28 @@ function closeNav() {
   navMenu.style.color = "white";
 }
 
+document
+  .querySelector("footer section div h3")
+  .addEventListener("click", displayContactUs);
+
+document
+  .getElementsByClassName("nav-link")[3]
+  .addEventListener("click", expandContactUs);
+
+document
+  .getElementsByClassName("fa-bars")[0]
+  .addEventListener("click", checkIfOpen);
+
+for (let i = 4; i <= 7; i++) {
+  document
+    .getElementsByClassName("nav-link")
+    [i].addEventListener("click", closeNav);
+}
+
+document
+  .getElementsByClassName("nav-link")[7]
+  .addEventListener("click", expandContactUs);
+
+document.getElementById("video-button").addEventListener("click", setupVideo);
+
 //if (window.matchMedia("(orientation: portrait)").matches) {video.requestFullscreen();}
